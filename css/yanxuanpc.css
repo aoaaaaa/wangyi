@@ -1,0 +1,187 @@
+.header{	
+}
+.header .wrap{
+	position: relative;
+}
+.header .top_nav{
+	background-color: #333;
+	height: 36px;
+}
+.header .top_nav .left{
+	float: left;
+	height: 36px;
+	line-height: 36px;
+}
+.header .top_nav .left a{
+	color: #ccc;
+	font-size: 12px;
+}
+.header .top_nav .right>ul{
+	position: absolute;	
+	right: 0;
+}
+.header .top_nav .right>ul>li{
+	float: left;
+	margin-right:20px;
+	line-height: 36px;
+}
+.header .top_nav .right ul>li>a{
+	color: #ccc;
+}
+.header .top_nav .right ul>li>a:hover,
+.header .top_nav .left a:hover{
+	color: #fff;
+}
+.header .top_nav .right>ul>li:nth-child(7){
+	position: relative;
+}
+.header .top_nav .right>ul>li:hover>.list{
+	display: block;
+}
+.header .top_nav .right .list{
+	width: 80px;
+	height: 150px;
+	border: 1px solid #ccc;
+	/*background-color: red;*/
+	position: absolute;
+	left: -13px;
+	text-align: center;
+	display: none;
+}
+.header .top_nav .right .list ul>li{
+	border-bottom: 1px solid #ccc;
+	width: 60px;
+	margin: 0 auto;
+}
+.header .top_nav .right .list ul>li:last-child{
+	border: 0;
+}
+.header .top_nav .right .list ul>li>a{
+	color: #999;
+}
+.header .top_nav .right .list ul>li>a:hover{
+	color: #b4a078;
+}
+.header .center_logo{
+	height:164px; 
+}
+.header .center_logo .logo{
+	width: 180px;
+	height: 65px;
+	background-image: url(../images/yanxuan_logo.png);
+	position: absolute;
+	top:50px;
+	left: 455px;
+}
+.header .center_logo .search{
+	float: right;
+	margin-top: 75px;
+	border-bottom: 1px solid #ccc; 
+}
+.center_logo_search{
+	width: 272px;
+	height: 22px;
+	border: 0;
+	outline: none;
+}
+.header .fa{
+	font-size: 25px;
+	color:#b4a078; 
+}
+.header .fa-search,
+.header .fa-shopping-cart{
+	float: right;
+	margin-top: 75px;
+}
+.header .bottom_nav .wrap>ul>li{
+	float: left;
+	text-align: center;
+	line-height: 20px;
+	width: 83.8px;
+	font-size: 14px;
+	font-weight: 900;
+	color: #b4a078;
+}
+.header .bottom_nav .wrap>ul>li:first-child a{
+	color: #bfae8c;
+}
+.header .bottom_nav ul>li>a:hover,
+.header .bottom_nav ul>li>a:hover>.bottom_nav ul>li{
+	color: #bfae8c;
+	border-bottom: 2px solid #bfae8c;
+}
+.sub_nav1{
+	position: absolute;	
+	width: 100%;
+	/*height: 100px;*/
+	background-color: #fff;
+	left: 0;
+	border: 1px solid #bfae8c;
+	border-top: 0;
+}
+
+.sub_nav1>ul{
+}
+.sub_nav1>ul>li{
+	float: left;
+	/*height: 20px;*/
+	width: 120px;
+	margin-left: 30px;
+	margin-top: 20px;
+	text-align: center;
+}
+.sub_nav1>ul>li .img{
+	width: 44px;
+	height: 44px;
+	margin:0 auto;
+}
+.sub_nav1>ul>li:nth-child(1) .img{
+	background-image: url(../images/yanxuan/居家/居家1.png);
+}
+.sub_nav1>ul>li:nth-child(2) .img{
+	background-image: url(../images/yanxuan/居家/居家2.png);
+}
+.sub_nav1>ul>li:nth-child(3) .img{
+	background-image: url(../images/yanxuan/居家/居家3.png);
+}
+.sub_nav1>ul>li:nth-child(4) .img{
+	background-image: url(../images/yanxuan/居家/居家4.png);
+}
+.sub_nav1>ul>li:nth-child(5) .img{
+	background-image: url(../images/yanxuan/居家/居家5.png);
+}
+.sub_nav1>ul>li:nth-child(6) .img{
+	background-image: url(../images/yanxuan/居家/居家6.png);
+}
+.sub_nav1>ul>li:nth-child(7) .img{
+	background-image: url(../images/yanxuan/居家/居家7.png);
+}
+.sub_nav1>ul>li:nth-child(8) .img{
+	background-image: url(../images/yanxuan/居家/居家8.png);
+}
+.sub_nav1>ul>li:nth-child(9) .img{
+	background-image: url(../images/yanxuan/居家/居家9.png);
+}
+.sub_nav1>ul>li:nth-child(10) .img{
+	background-image: url(../images/yanxuan/居家/居家10.png);
+}
+.sub_nav1>ul>li:nth-child(11) .img{
+	background-image: url(../images/yanxuan/居家/居家11.png);
+}
+.sub_nav1>ul>li:nth-child(12) .img{
+	background-image: url(../images/yanxuan/居家/居家12.png);
+}
+.sub_nav1 a{
+	line-height: 30px;
+}
+.wrap{
+	width: 1090px;
+	margin: 0 auto;
+	position: relative;
+}
+.header .top_nav .wrap::after,
+.header .center_logo .wrap::after{
+	content: "";
+	display: block;
+	clear: both;
+}
