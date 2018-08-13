@@ -1,9 +1,9 @@
 .header{	
 }
-.header .wrap{
+.header>.top_nav>.wrap{
 	position: relative;
 }
-.header .top_nav{
+.header>.top_nav{
 	background-color: #333;
 	height: 36px;
 }
@@ -25,10 +25,10 @@
 	margin-right:20px;
 	line-height: 36px;
 }
-.header .top_nav .right ul>li>a{
+.header .top_nav .right>ul>li>a{
 	color: #ccc;
 }
-.header .top_nav .right ul>li>a:hover,
+.header .top_nav .right>ul>li>a:hover,
 .header .top_nav .left a:hover{
 	color: #fff;
 }
@@ -42,7 +42,6 @@
 	width: 80px;
 	height: 150px;
 	border: 1px solid #ccc;
-	/*background-color: red;*/
 	position: absolute;
 	left: -13px;
 	text-align: center;
@@ -93,91 +92,311 @@
 	float: right;
 	margin-top: 75px;
 }
-.header .bottom_nav .wrap>ul>li{
+.header .bottom_nav::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.header .bottom_nav>.wrap>ul>li{
 	float: left;
 	text-align: center;
-	line-height: 20px;
+	line-height: 40px;
 	width: 83.8px;
 	font-size: 14px;
 	font-weight: 900;
 	color: #b4a078;
 }
+.header .bottom_nav .wrap>ul>li>a:hover,
+.header .bottom_nav .wrap>ul>li>a:hover>.bottom_nav ul>li,
 .header .bottom_nav .wrap>ul>li:first-child a{
-	color: #bfae8c;
-}
-.header .bottom_nav ul>li>a:hover,
-.header .bottom_nav ul>li>a:hover>.bottom_nav ul>li{
 	color: #bfae8c;
 	border-bottom: 2px solid #bfae8c;
 }
-.sub_nav1{
-	position: absolute;	
+.header .bottom_nav .sub_nav{
+	border-bottom: 1px solid #bfae8c;
 	width: 100%;
-	/*height: 100px;*/
-	background-color: #fff;
+	position: absolute;
 	left: 0;
-	border: 1px solid #bfae8c;
-	border-top: 0;
 }
-
-.sub_nav1>ul{
+.header .bottom_nav .wrap>ul>li .sub_nav ul{
+	margin: auto;
+	width: 1120px;
 }
-.sub_nav1>ul>li{
+.header .bottom_nav .sub_nav ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.header .bottom_nav .sub_nav>ul>li{
 	float: left;
-	/*height: 20px;*/
 	width: 120px;
 	margin-left: 30px;
 	margin-top: 20px;
 	text-align: center;
 }
-.sub_nav1>ul>li .img{
+.header .bottom_nav .sub_nav>ul>li .img{
 	width: 44px;
 	height: 44px;
 	margin:0 auto;
 }
-.sub_nav1>ul>li:nth-child(1) .img{
-	background-image: url(../images/yanxuan/居家/居家1.png);
+.header .bottom_nav .wrap>ul>li:nth-child(2) .sub_nav>ul>li:nth-child(1) .img{
+	background-image: url(../images/居家/居家1.png);
 }
-.sub_nav1>ul>li:nth-child(2) .img{
-	background-image: url(../images/yanxuan/居家/居家2.png);
+.header .bottom_nav .wrap>ul>li:nth-child(2) .sub_nav>ul>li:nth-child(2) .img{
+	background-image: url(../images/居家/居家2.png);
 }
-.sub_nav1>ul>li:nth-child(3) .img{
-	background-image: url(../images/yanxuan/居家/居家3.png);
+.header .bottom_nav .wrap>ul>li:nth-child(2) .sub_nav>ul>li:nth-child(3) .img{
+	background-image: url(../images/居家/居家3.png);
 }
-.sub_nav1>ul>li:nth-child(4) .img{
-	background-image: url(../images/yanxuan/居家/居家4.png);
+.header .bottom_nav .wrap>ul>li:nth-child(2) .sub_nav>ul>li:nth-child(4) .img{
+	background-image: url(../images/居家/居家4.png);
 }
-.sub_nav1>ul>li:nth-child(5) .img{
-	background-image: url(../images/yanxuan/居家/居家5.png);
+.header .bottom_nav .wrap>ul>li:nth-child(2) .sub_nav>ul>li:nth-child(5) .img{
+	background-image: url(../images/居家/居家5.png);
 }
-.sub_nav1>ul>li:nth-child(6) .img{
-	background-image: url(../images/yanxuan/居家/居家6.png);
+.header .bottom_nav .wrap>ul>li:nth-child(2) .sub_nav>ul>li:nth-child(6) .img{
+	background-image: url(../images/居家/居家6.png);
 }
-.sub_nav1>ul>li:nth-child(7) .img{
-	background-image: url(../images/yanxuan/居家/居家7.png);
+.header .bottom_nav .wrap>ul>li:nth-child(2) .sub_nav>ul>li:nth-child(7) .img{
+	background-image: url(../images/居家/居家7.png);
 }
-.sub_nav1>ul>li:nth-child(8) .img{
-	background-image: url(../images/yanxuan/居家/居家8.png);
+.header .bottom_nav .wrap>ul>li:nth-child(2) .sub_nav>ul>li:nth-child(8) .img{
+	background-image: url(../images/居家/居家8.png);
 }
-.sub_nav1>ul>li:nth-child(9) .img{
-	background-image: url(../images/yanxuan/居家/居家9.png);
+.header .bottom_nav .wrap>ul>li:nth-child(2) .sub_nav>ul>li:nth-child(9) .img{
+	background-image: url(../images/居家/居家9.png);
 }
-.sub_nav1>ul>li:nth-child(10) .img{
-	background-image: url(../images/yanxuan/居家/居家10.png);
+.header .bottom_nav .wrap>ul>li:nth-child(2) .sub_nav>ul>li:nth-child(10) .img{
+	background-image: url(../images/居家/居家10.png);
 }
-.sub_nav1>ul>li:nth-child(11) .img{
-	background-image: url(../images/yanxuan/居家/居家11.png);
+.header .bottom_nav .wrap>ul>li:nth-child(2) .sub_nav>ul>li:nth-child(11) .img{
+	background-image: url(../images/居家/居家11.png);
 }
-.sub_nav1>ul>li:nth-child(12) .img{
-	background-image: url(../images/yanxuan/居家/居家12.png);
+.header .bottom_nav .wrap>ul>li:nth-child(2) .sub_nav>ul>li:nth-child(12) .img{
+	background-image: url(../images/居家/居家12.png);
 }
-.sub_nav1 a{
-	line-height: 30px;
+
+
+
+.header .bottom_nav .wrap>ul>li:nth-child(3) .sub_nav>ul>li:nth-child(1) .img{
+	background-image: url(../images/鞋包配饰/1.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(3) .sub_nav>ul>li:nth-child(2) .img{
+	background-image: url(../images/鞋包配饰/2.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(3) .sub_nav>ul>li:nth-child(3) .img{
+	background-image: url(../images/鞋包配饰/3.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(3) .sub_nav>ul>li:nth-child(4) .img{
+	background-image: url(../images/鞋包配饰/4.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(3) .sub_nav>ul>li:nth-child(5) .img{
+	background-image: url(../images/鞋包配饰/5.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(3) .sub_nav>ul>li:nth-child(6) .img{
+	background-image: url(../images/鞋包配饰/6.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(3) .sub_nav>ul>li:nth-child(7) .img{
+	background-image: url(../images/鞋包配饰/7.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(3) .sub_nav>ul>li:nth-child(8) .img{
+	background-image: url(../images/鞋包配饰/8.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(3) .sub_nav>ul>li:nth-child(9) .img{
+	background-image: url(../images/鞋包配饰/9.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(3) .sub_nav>ul>li:nth-child(10) .img{
+	background-image: url(../images/鞋包配饰/10.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(3) .sub_nav>ul>li:nth-child(11) .img{
+	background-image: url(../images/鞋包配饰/11.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(3) .sub_nav>ul>li:nth-child(12) .img{
+	background-image: url(../images/鞋包配饰/12.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(3) .sub_nav>ul>li:nth-child(13) .img{
+	background-image: url(../images/鞋包配饰/13.png);
+}
+
+
+.header .bottom_nav .wrap>ul>li:nth-child(4) .sub_nav>ul>li:nth-child(1) .img{
+	background-image: url(../images/服装/1.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(4) .sub_nav>ul>li:nth-child(2) .img{
+	background-image: url(../images/服装/2.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(4) .sub_nav>ul>li:nth-child(3) .img{
+	background-image: url(../images/服装/3.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(4) .sub_nav>ul>li:nth-child(4) .img{
+	background-image: url(../images/服装/4.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(4) .sub_nav>ul>li:nth-child(5) .img{
+	background-image: url(../images/服装/5.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(4) .sub_nav>ul>li:nth-child(6) .img{
+	background-image: url(../images/服装/6.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(4) .sub_nav>ul>li:nth-child(7) .img{
+	background-image: url(../images/服装/7.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(4) .sub_nav>ul>li:nth-child(8) .img{
+	background-image: url(../images/服装/8.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(4) .sub_nav>ul>li:nth-child(9) .img{
+	background-image: url(../images/服装/9.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(4) .sub_nav>ul>li:nth-child(10) .img{
+	background-image: url(../images/服装/10.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(4) .sub_nav>ul>li:nth-child(11) .img{
+	background-image: url(../images/服装/11.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(4) .sub_nav>ul>li:nth-child(12) .img{
+	background-image: url(../images/服装/12.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(4) .sub_nav>ul>li:nth-child(13) .img{
+	background-image: url(../images/服装/13.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(4) .sub_nav>ul>li:nth-child(14) .img{
+	background-image: url(../images/服装/14.png);
+}
+
+
+
+.header .bottom_nav .wrap>ul>li:nth-child(5) .sub_nav>ul>li:nth-child(1) .img{
+	background-image: url(../images/电器/1.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(5) .sub_nav>ul>li:nth-child(2) .img{
+	background-image: url(../images/电器/2.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(5) .sub_nav>ul>li:nth-child(3) .img{
+	background-image: url(../images/电器/3.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(5) .sub_nav>ul>li:nth-child(4) .img{
+	background-image: url(../images/电器/4.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(5) .sub_nav>ul>li:nth-child(5) .img{
+	background-image: url(../images/电器/5.png);
+}
+
+
+
+.header .bottom_nav .wrap>ul>li:nth-child(6) .sub_nav>ul>li:nth-child(1) .img{
+	background-image: url(../images/洗护/1.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(6) .sub_nav>ul>li:nth-child(2) .img{
+	background-image: url(../images/洗护/2.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(6) .sub_nav>ul>li:nth-child(3) .img{
+	background-image: url(../images/洗护/3.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(6) .sub_nav>ul>li:nth-child(4) .img{
+	background-image: url(../images/洗护/4.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(6) .sub_nav>ul>li:nth-child(5) .img{
+	background-image: url(../images/洗护/5.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(6) .sub_nav>ul>li:nth-child(6) .img{
+	background-image: url(../images/洗护/6.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(6) .sub_nav>ul>li:nth-child(7) .img{
+	background-image: url(../images/洗护/7.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(6) .sub_nav>ul>li:nth-child(8) .img{
+	background-image: url(../images/洗护/8.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(6) .sub_nav>ul>li:nth-child(9) .img{
+	background-image: url(../images/洗护/9.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(6) .sub_nav>ul>li:nth-child(10) .img{
+	background-image: url(../images/洗护/10.png);
+}
+
+
+
+
+.header .bottom_nav .wrap>ul>li:nth-child(7) .sub_nav>ul>li:nth-child(1) .img{
+	background-image: url(../images/饮食/1.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(7) .sub_nav>ul>li:nth-child(2) .img{
+	background-image: url(../images/饮食/2.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(7) .sub_nav>ul>li:nth-child(3) .img{
+	background-image: url(../images/饮食/3.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(7) .sub_nav>ul>li:nth-child(4) .img{
+	background-image: url(../images/饮食/4.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(7) .sub_nav>ul>li:nth-child(5) .img{
+	background-image: url(../images/饮食/5.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(7) .sub_nav>ul>li:nth-child(6) .img{
+	background-image: url(../images/饮食/6.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(7) .sub_nav>ul>li:nth-child(7) .img{
+	background-image: url(../images/饮食/7.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(7) .sub_nav>ul>li:nth-child(8) .img{
+	background-image: url(../images/饮食/8.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(7) .sub_nav>ul>li:nth-child(9) .img{
+	background-image: url(../images/饮食/9.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(7) .sub_nav>ul>li:nth-child(10) .img{
+	background-image: url(../images/饮食/10.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(7) .sub_nav>ul>li:nth-child(11) .img{
+	background-image: url(../images/饮食/11.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(7) .sub_nav>ul>li:nth-child(12) .img{
+	background-image: url(../images/饮食/12.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(7) .sub_nav>ul>li:nth-child(13) .img{
+	background-image: url(../images/饮食/13.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(7) .sub_nav>ul>li:nth-child(14) .img{
+	background-image: url(../images/饮食/14.png);
+}
+
+
+
+.header .bottom_nav .wrap>ul>li:nth-child(8) .sub_nav>ul>li:nth-child(1) .img{
+	background-image: url(../images/餐厨/1.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(8) .sub_nav>ul>li:nth-child(2) .img{
+	background-image: url(../images/餐厨/2.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(8) .sub_nav>ul>li:nth-child(3) .img{
+	background-image: url(../images/餐厨/3.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(8) .sub_nav>ul>li:nth-child(4) .img{
+	background-image: url(../images/餐厨/4.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(8) .sub_nav>ul>li:nth-child(5) .img{
+	background-image: url(../images/餐厨/5.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(8) .sub_nav>ul>li:nth-child(6) .img{
+	background-image: url(../images/餐厨/6.png);
+}
+.header .bottom_nav .wrap>ul>li:nth-child(8) .sub_nav>ul>li:nth-child(7) .img{
+	background-image: url(../images/餐厨/7.png);
+}
+.sub_nav a{
+	line-height: 40px;
+}
+.sub_nav a:hover{
+	color: #bfae8c;
+}
+.sub_nav{
+	display: none;
+}
+.header .bottom_nav .wrap>ul>li:hover>.sub_nav{
+	display: block;
 }
 .wrap{
 	width: 1090px;
 	margin: 0 auto;
-	position: relative;
 }
 .header .top_nav .wrap::after,
 .header .center_logo .wrap::after{
