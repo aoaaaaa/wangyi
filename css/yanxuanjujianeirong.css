@@ -1,0 +1,62 @@
+div,li{
+	box-sizing: border-box;
+}
+.content1 .wrap{
+	width: 1090px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.content1 .bottom::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.content1 .bottom .photo{
+	float: left;
+	width: 524px;
+	height: 440px;
+	position: relative;
+}
+.content1 .bottom .photo>ul{
+	height: 440px;
+	position: absolute;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.content1 .bottom .photo>ul>li{
+	width: 74px;
+	height: 74px;
+}
+.content1 .bottom .photo>ul>li:first-child{
+	background-color: #f4f4f4;
+}
+.content1 .bottom .photo>ul>li:hover{
+	border: 1px solid #b4a078;
+}
+.content1 .bottom .photo>ul>li:hover>.large-photo{
+	display: block;
+}
+.content1 .bottom .photo>ul>li img{
+	width: 100%;
+}
+.content1 .bottom .photo .large-photo{
+	width: 428px;
+	height: 428px;
+	position: absolute;
+	background-color: #f4f4f4;
+	top: 6px;
+	left: -450px;
+	display: none;
+	border: 1px solid #ededed;
+}
+.content1 .bottom .photo>ul>li:first-child .large-photo{
+	display: block;
+}
+.content1 .bottom .desc{
+	float: right;
+	width: 504px;
+	height: 593px;
+	background-color: teal;
+}
