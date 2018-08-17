@@ -103,7 +103,6 @@ div,li{
 	float: right;
 	width: 504px;
 	height: 593px;
-	background-color: teal;
 }
 .content1 .bottom .desc .top::after{
 	content: "";
@@ -218,8 +217,9 @@ div,li{
 .content1 .bottom .desc .tiaoxuan ul>li{
 	float: left;
 	margin-right: 10px;
-	background-color: #fff;
+	background-color: #f4f4f4;
 	margin-bottom: 17px;
+	border: 1px solid #ededed;
 }
 .content1 .bottom .desc .tiaoxuan tr:first-child>td:last-chidl::after{
 	content: "";
@@ -256,12 +256,28 @@ div,li{
 	float: left;
 }
 .content1 .bottom .desc .button{
-	margin-top: 30px;
+	margin-top: 20px;
 	margin-left: 12px;
 }
 .content1 .bottom .desc .button a{
-	padding:10px 50px;
+	padding: 10px 30px;
 	line-height:50px;
 	font-size: 18px;
-	border: 1px solid #ededed;
+	border: 1px solid #bfae8c;
+	margin-right: 10px;
+}
+.content1 .bottom .desc .button>a:first-child{
+	background-color: #f4f4f4;
+}
+.content1 .bottom .desc .button>a:first-child:hover{
+	background-color: #fff;
+}
+.content1 .bottom .desc .button>a:nth-child(2){
+	background-color: #b4a078;
+}
+.content1 .bottom .desc .button>a:nth-child(2):hover{
+	background-color: #c0ae8a	;
+}
+.content1 .bottom .desc .button>a:last-child{
+	padding: 10px 5px;
 }

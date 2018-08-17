@@ -979,66 +979,57 @@
 	justify-content: space-between;
 	animation: content18move 10s linear infinite;
 }
+.content18 .link>ul:hover{
+	animation-play-state: paused;
+}
 @keyframes content18move{
 	0%{
 		transform:translateX(0);
 	}
-	5%{
+	7%{
 		transform: translateX(0px);
 	}
-	10%{
+	14%{
 		transform: translateX(-365px);
 	}
-	15%{
+	21%{
 		transform: translateX(-365px);
 	}
-	20%{
+	28%{
 		transform: translateX(-730px);
-	}
-	25%{
-		transform: translateX(-730px);
-	}
-	30%{
-		transform: translateX(-1095px);
 	}
 	35%{
+		transform: translateX(-730px);
+	}
+	42%{
 		transform: translateX(-1095px);
 	}
-	40%{
+	49%{
+		transform: translateX(-1095px);
+	}
+	56%{
 		transform: translateX(-1460px);
 	}
-	45%{
+	63%{
 		transform: translateX(-1460px);
-	}
-	50%{
-		transform: translateX(-1825px);
-	}
-	55%{
-		transform: translateX(-1825px);
-	}
-	60%{
-		transform: translateX(-2190px);
-	}
-	65%{
-		transform: translateX(-2190px);
 	}
 	70%{
-		transform: translateX(-2555px);
+		transform: translateX(-1825px);
 	}
-	75%{
-		transform: translateX(-2555px);
+	77%{
+		transform: translateX(-1825px);
 	}
-	80%{
-		transform: translateX(-2920px);
+	84%{
+		transform: translateX(-2190px);
 	}
-	85%{
-		transform: translateX(-2920px);
+	91%{
+		transform: translateX(-2190px);
 	}
-	90%{
-		transform: translateX(-3285px);
+	98%{
+		transform: translate(-2190px);
 	}
-	95%{
-		transform: translateX(-3285px);
+	100%{
+		transform: translate(-2190px);
 	}
 }
 .content18 .link>ul>li{
