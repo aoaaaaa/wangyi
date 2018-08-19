@@ -2,14 +2,103 @@
 
 .content1{
 	height: 420px;
-	background-image: url(../images/顶部动图.jpg);
-	animation:dingbu 20s both steps(8) infinite;
 	margin: 0 auto;
 	position: relative;
-}	
+	overflow-x:hidden;
+	min-width: 1090px;
+}
+.content1::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.content1 .img>ul{
+	width: 100%;
+	overflow: hidden;
+	animation:dingbu 20s both linear infinite;
+}
+.content1 .img>ul>li{
+	width: 1920px;
+	height: 420px;
+	position: relative;
+	margin-left: 50%;
+	left: -960px;
+}
+/*.content1 .img>ul>li:nth-child(1){
+	top: -420px;
+}
+.content1 .img>ul>li:nth-child(2){
+	top: -840px;
+}
+.content1 .img>ul>li:nth-child(3){
+	top: -1260px;
+}
+.content1 .img>ul>li:nth-child(4){
+	top: -1480px;
+}
+.content1 .img>ul>li:nth-child(5){
+	top: -2100px;
+}
+.content1 .img>ul>li:nth-child(6){
+	top: -2520px;
+}
+.content1 .img>ul>li:nth-child(7){
+	top: -2940px;
+}
+.content1 .img>ul>li:nth-child(8){
+	top: -3360px;
+}*/
 @keyframes dingbu{
+	0%{
+		transform: translateY(0)
+	}
+	6.6%{
+		transform: translateY(0);
+	}
+	13.2%{
+		transform: translateY(-420px);
+	}
+	19.8%{
+		transform: translateY(-420px);
+	}
+	26.4%{
+		transform: translateY(-840px);
+	}
+	33%{
+		transform: translateY(-840px);
+	}
+	39.6%{
+		transform: translateY(-1260px);
+	}
+	46.2%{
+		transform: translateY(-1260px);
+	}
+	52.8%{
+		transform: translateY(-1680px);
+	}
+	59.4%{
+		transform: translateY(-1680px);
+	}
+	66%{
+		transform: translateY(-2100px);
+	}
+	72.6%{
+		transform: translateY(-2100px);
+	}
+	79.2%{
+		transform: translateY(-2520px);
+	}
+	85.8%{
+		transform: translateY(-2520px);
+	}
+	92.4%{
+		transform: translateY(-2940px);
+	}
+	99.9%{
+		transform: translateY(-2940px);
+	}
 	100%{
-		background-position: -15360px;
+		transform: translateX(0);
 	}
 }
 .content1 .bottom_button{

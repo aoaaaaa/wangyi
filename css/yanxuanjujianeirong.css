@@ -30,6 +30,24 @@ div,li{
 	padding: 3px 5px;
 	margin-right: 5px;
 }
+.manejian{
+	background-color: #e36844;
+	color: #fff;
+	line-height: 20px;
+	padding: 3px 5px;
+}
+.xp{
+	background-color: #b4a078;
+	color: #fff;
+	line-height: 20px;
+	padding: 3px 5px;
+}
+.bp{
+	background-color: #f28f2d;
+	color: #fff;
+	line-height: 20px;
+	padding: 3px 5px;
+}
 
 
 
@@ -37,7 +55,9 @@ div,li{
 .content1{
 	border-top: 1px solid #ededed;
 }
-.content1 .wrap{
+.content1 .wrap,
+.content2 .wrap,
+.content3 .wrap{
 	width: 1090px;
 	margin: 0 auto;
 }
@@ -280,4 +300,270 @@ div,li{
 }
 .content1 .bottom .desc .button>a:last-child{
 	padding: 10px 5px;
+}
+
+
+
+
+
+.content2{
+	margin-top: 20px;
+}
+.content2 .title{
+	background-color: #f5f5f5;
+	border: 1px solid #ededed;
+}
+.content2 .title span{
+	font-size: 17px;
+	line-height: 44px;
+	margin-left: 20px;
+}
+.content2 .bottom .link{
+	width: 930px;
+	padding-top: 12px;
+	margin: auto;
+	margin-bottom: 28px;
+	position: relative;
+}
+.content2 .bottom .link::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.content2 .bottom .link>ul{
+	display: flex;
+	justify-content: space-between;
+}
+.content2 .bottom .link>ul>li{
+	height: 279px;
+	width: 210px;
+	float: left;
+}
+.content2 .bottom .link>ul>li .img{
+	width: 210px;
+	height: 210px;
+	background-color: #fff;
+	position: relative;
+	overflow: hidden;
+}
+.content2 .bottom .link>ul>li .img img{
+	transition: transform 1s;
+}
+.content2 .bottom .link>ul>li:hover>.img img{
+	transform: scale(1.1);
+}
+.content2 .bottom .link>ul>li .img .xiaobiao{
+	background-color: #f4f0ea;
+	border-radius: 5px;
+	border: 1px solid #bfae8c;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	padding: 2px 5px;
+}
+.content2 .bottom .link>ul>li .img .xiaobiao a{
+	color: #bfae8c;
+}
+.content2 .bottom .link>ul>li .font{
+	text-align: center;
+	margin-top: 2px;
+}
+.content2 .bottom .link>ul>li .font .font_top{
+	height: 20px;
+	margin-bottom: 3px;
+}
+.content2 .bottom .link>ul>li .font .font_top>span{
+	color: #fff;
+	line-height: 20px;
+	padding: 3px 5px;
+}
+.content2 .bottom .link>ul>li .font .name{
+	font-size: 14px;
+	line-height:20px;
+	font-weight: 600;
+	margin-bottom: 4px;
+}
+.content2 .bottom .link>ul>li .font .name a:hover{
+	color: #bfae8c;
+}
+.content2 .bottom .link>ul>li .font .price{
+	color: #be4141;
+	font-size: 14px;
+}
+.content2 .bottom .link>ul>li .font .price i{
+	font-size: 18px;
+}
+.content2 .left_button,
+.content2 .right_button{
+	position: absolute;
+	font-size: 50px;
+}
+.content2 .left_button i,
+.content2 .right_button i{
+	color: #d0c4af;
+}
+.content2 .left_button i:hover,
+.content2 .right_button i:hover{
+	color: #b19e7a;
+}
+.content2 .left_button{
+	left: -50px;
+	top: 50%;
+	margin-top: -25px;
+}
+.content2 .right_button{
+	right: -50px;
+	top: 50%;
+	margin-top: -25px;
+}
+
+
+
+
+.content3{
+	margin-top: 20px;
+}
+.content3 .wrap::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.content3 .left{
+	width: 750px;
+	margin-right: 40px;
+	float: left;
+}
+.content3 .left .title{
+	padding-bottom:50px;
+}
+.content3 .left .title>ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.content3 .left .title>ul>li{
+	float: left;
+	width: 125px;
+}
+.content3 .left .title>ul>li>.name{
+	text-align: center;
+	line-height: 42px;
+	height: 42px;
+	background-color: #f5f5f5;
+	border: 1px solid #ededed;
+}
+.content3 .left .title>ul>li:last-child{
+	width: 248px;
+}
+.content3 .left .title>ul>li a{
+	font-size: 14px;
+}
+.content3 .left .title>ul>li a:hover{
+	color: #bfae8c;
+}
+.content3 .left .title>ul>li:nth-child(1) .neirong{
+	width: 750px;
+	position: relative;
+	top: 42px;
+	left: 0;
+	/*display: none;*/
+}
+.content3 .left .title>ul>li:nth-child(1) .neirong .chanping table{
+	text-align: left;
+	line-height: 24px;
+	margin-top: 20px;
+	font-size: 14px;
+}
+.content3 .left .title>ul>li:nth-child(1) .neirong .chanping td{
+	border-bottom: 1px dotted #ccc;
+}
+.content3 .left .title>ul>li:nth-child(1) .neirong .chanping td:first-child{
+	width: 105px;
+	padding: 8px 0;
+	padding-left: 30px;
+}
+.content3 .left .title>ul>li:nth-child(1) .neirong .chanping td:last-child{
+	width: 700px;	
+	color: #999;
+}
+.content3 .left .title>ul>li:nth-child(1) .neirong .chanping tr:nth-child(2)>td{
+	border-bottom: 0;
+}
+.content3 .left .title>ul>li:nth-child(1) .neirong .chanping .img>ul>li{
+	height: 200px;
+}
+.content3 .left .title>ul>li:nth-child(1) .neirong .chanping .img::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.content3 .left .title>ul>li:nth-child(4) .neirong{
+	position: relative;
+	left: -375px;
+	width: 748px;
+	border: 1px solid #ededed;
+	display: none;
+}
+.content3 .left .title>ul>li:nth-child(4):hover>.neirong{
+	display: block;
+}
+.content3 .left .title>ul>li:nth-child(4):hover .title>ul>li:nth-child(1) .neirong{
+	display: none;
+}
+.content3 .left .title>ul>li:nth-child(4) .neirong>ul{
+	margin-left: 50px;
+	margin-top: 40px; 
+	font-size: 14px;
+	width: 616px;
+}
+.content3 .left .title>ul>li:nth-child(4) .neirong>ul>li{
+	margin-bottom: 32px;
+}
+.content3 .left .title>ul>li:nth-child(4) .neirong>ul>li div:first-child{
+	
+	padding-bottom: 8px;
+}
+.content3 .left .title>ul>li:nth-child(4) .neirong>ul>li div:nth-child(2){
+	line-height: 18px;
+	color: #999;
+}
+.content3 .right{
+	width: 300px;
+	float: right;
+	border: 1px solid #ededed;
+}
+.content3 .right .title{
+	font-size: 18px;
+	line-height: 41px;
+	font-weight: 700;
+	text-align: center;
+	background-color: #f5f5f5;
+}
+.content3 .right .neirong>ul>li{
+	margin: 24px 24px 0 24px;
+	width: 250px;
+	height: 318px;
+	border-bottom: 1px solid #ededed;
+	text-align: center;
+}
+.content3 .right .neirong>ul>li .font .name{
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 8px;
+}
+.content3 .right .neirong>ul>li .font .name a{
+	font-size: 14px;
+    line-height: 1;
+}
+.content3 .right .neirong>ul>li .font .name a:hover{
+	color: #bfae8c;
+}
+.content3 .right .neirong>ul>li .font .price span{
+	color: #e36844;
+	font-size: 14px;
+}	
+.content3 .right .neirong>ul>li .font .price i{
+	font-size: 20px;
+	color: #bfae8c;
 }
