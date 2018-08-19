@@ -1,0 +1,94 @@
+div,li{
+	box-sizing: border-box;
+}
+.sub-title{
+	color: #999;
+	font-size: 14px;
+}
+.color1{
+	color: #e36844;/*网易红*/
+}
+.color2{
+	color: #999;
+}
+.color3{
+	color: #bfae8c;/*网易主色*/
+}
+.color4{
+	color:#fff;
+}
+.titlename{
+	font-size: 20px;
+	font-weight: 700px;
+}
+.span{
+	font-size: 13px;
+}
+.manejian{
+	color: #fff;
+	background-color: #e36844;
+	padding: 3px 5px;
+	margin-right: 5px;
+}
+.manejian{
+	background-color: #e36844;
+	color: #fff;
+	line-height: 20px;
+	padding: 3px 5px;
+}
+.xp{
+	background-color: #b4a078;
+	color: #fff;
+	line-height: 20px;
+	padding: 3px 5px;
+}
+.bp{
+	background-color: #f28f2d;
+	color: #fff;
+	line-height: 20px;
+	padding: 3px 5px;
+}
+
+
+
+
+.content1{
+	border-top: 1px solid #ededed;
+	margin-top: 10px;
+}
+.content1 .wrap,
+.content2 .wrap{
+	width: 1090px;
+	margin: 0 auto;
+}
+.content1 .youhuiquan{
+	border: 1px solid #ededed;
+	margin-top: 10px;
+}
+.content1 .youhuiquan::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.content1 .youhuiquan .left{
+	float: left;
+}
+.content1 .youhuiquan .left i{
+	line-height: 38px;
+	font-size: 24px;
+	color: #e36844;
+	margin: 0 17px 0 12px;
+}
+.content1 .youhuiquan .left span{
+	font-size: 14px;
+	line-height: 38px;
+}
+.content1 .youhuiquan .right{
+	float: right;
+	font-size: 14px;
+	margin: 8px 16px;
+	border: 1px solid #e36844;
+	width: 94px;
+	height: 22px;
+	text-align: center;
+}
