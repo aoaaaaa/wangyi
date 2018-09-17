@@ -9,6 +9,49 @@
 	<link rel="stylesheet" href="./font_e958uhno91t/iconfont.css">
 	<link rel="stylesheet" href="./font_vf5vve0uqt/iconfont.css">
 	<link rel="stylesheet" href="./css/yanxuancommon.css">
+	<script>
+		window.onload=function(){
+			//content1中放图片的ul
+			var content1_ul=document.getElementsByClassName('content1')[0].children[0].children[0];
+			//content1中放图片的li
+			var content1_li1=document.getElementsByClassName('content1')[0].children[0].children;
+			//content1中放list点的li
+			var content1_li2=document.getElementsByClassName('content1')[0].children[1].children[0].children;
+			
+			//设置自动轮播
+			var pos=content1_ul.style.top;
+			function uldong(){
+				for(var i=1;i<2;i++){
+					if(pos!=-2940*i){
+						pos=pos-10;
+						content1_ul.style.top=pos+'px';
+					}
+					else if(pos==-2940*i){
+						pos=0;
+					}
+				}
+			}
+
+			function zidong(){
+				dsq=setInterval(function(){
+					uldong();
+				},60);
+			}
+			zidong();
+
+			content1_li2=Array.prototype.slice.call(content1_li2,0);
+			content1_li2.forEach(function(item,index){
+				item.onmouseover=function(){
+					clearInterval(dsq);
+					content1_ul.style.top=-420*index+'px';
+				}
+				item.onmouseout=function(){
+					zidong();
+				}
+			})
+
+		}
+	</script>
 </head>
 <body>
 	<div class="guding">
@@ -657,14 +700,14 @@
 		<div class="content1">
 			<div class="img">
 				<ul>
-					<li><img src="./images/content1/ul_li1.jpg" alt=""></li>
-					<li><img src="./images/content1/ul_li2.jpg" alt=""></li>
-					<li><img src="./images/content1/ul_li3.jpg" alt=""></li>
-					<li><img src="./images/content1/ul_li4.jpg" alt=""></li>
-					<li><img src="./images/content1/ul_li5.jpg" alt=""></li>
-					<li><img src="./images/content1/ul_li6.jpg" alt=""></li>
-					<li><img src="./images/content1/ul_li7.jpg" alt=""></li>
-					<li><img src="./images/content1/ul_li8.jpg" alt=""></li>
+					<li><img src="./images/content1/ul_li1.jpg" alt="图1"></li>
+					<li><img src="./images/content1/ul_li2.jpg" alt="图2"></li>
+					<li><img src="./images/content1/ul_li3.jpg" alt="图3"></li>
+					<li><img src="./images/content1/ul_li4.jpg" alt="图4"></li>
+					<li><img src="./images/content1/ul_li5.jpg" alt="图5"></li>
+					<li><img src="./images/content1/ul_li6.jpg" alt="图6"></li>
+					<li><img src="./images/content1/ul_li7.jpg" alt="图7"></li>
+					<li><img src="./images/content1/ul_li8.jpg" alt="图8"></li>
 				</ul>
 			</div>
 			<div class="bottom_button">
@@ -679,6 +722,7 @@
 					<li></li>
 				</ul>
 			</div>
+
 		</div>
 		<div class="content2">
 			<div class="wrap">

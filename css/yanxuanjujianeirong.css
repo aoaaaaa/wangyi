@@ -98,7 +98,7 @@ div,li{
 	border: 1px solid #b4a078;
 }
 .content1 .bottom .photo>ul>li:hover>.large-photo{
-	display: block;
+	/*display: block;*/
 }
 .content1 .bottom .photo>ul>li img{
 	width: 100%;

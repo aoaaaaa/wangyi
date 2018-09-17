@@ -4,12 +4,33 @@
 	<meta charset="UTF-8">
 	<title>严选居家·夏凉·牛皮席三件套</title>
 	<link rel="stylesheet" href="./css/common.css">
-	<link rel="stylesheet" href="./css/yanxuanpc.css">
 	<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
 	<link rel="stylesheet" href="./font_e958uhno91t/iconfont.css">
 	<link rel="stylesheet" href="./font_vf5vve0uqt/iconfont.css">
 	<link rel="stylesheet" href="./css/yanxuancommon.css">
 	<link rel="stylesheet" href="./css/yanxuanjujianeirong.css">
+	<script>
+		window.onload=function(){
+			var smallImg=document.getElementsByClassName('smallImg');
+			var large_photo=document.getElementsByClassName('large-photo');
+			smallImg=Array.prototype.slice.call(smallImg,0);
+			function change(){
+				for(var i=0;i<large_photo.length;i++){
+					large_photo[i].style.display='none';
+				}
+			}
+			smallImg.forEach(function(item,index){
+				item.onmouseover=function(){
+					change();
+					for(var i=0;i<large_photo.length;i++){
+						if(i==index){
+							large_photo[i].style.display='block';
+						}
+					}
+				}
+			});
+		}
+	</script>
 </head>
 <body>
 	<div class="guding">
@@ -665,35 +686,35 @@
 				</div>
 				<div class="bottom">
 					<div class="photo">
-						<ul>
+						<ul class="photo_ul">
 							<li>
-								<img src="./images/内容/content1/photo_ul_li1_small.png" alt="">
+								<img src="./images/内容/content1/photo_ul_li1_small.png" alt="" class="smallImg">
 								<div class="large-photo">
-									<img src="./images/内容/content1/photo_ul_li1_large.png" alt="">
+									<img src="./images/内容/content1/photo_ul_li1_large.png" alt="" class="bigImg">
 								</div>
 							</li>
 							<li>
-								<img src="./images/内容/content1/photo_ul_li2_small.jpg" alt="">
+								<img src="./images/内容/content1/photo_ul_li2_small.jpg" alt="" class="smallImg">
 								<div class="large-photo">
-									<img src="./images/内容/content1/photo_ul_li2_large.jpg" alt="">
+									<img src="./images/内容/content1/photo_ul_li2_large.jpg" alt="" class="bigImg">
 								</div>
 							</li>
 							<li>
-								<img src="./images/内容/content1/photo_ul_li3_small.jpg" alt="">
+								<img src="./images/内容/content1/photo_ul_li3_small.jpg" alt="" class="smallImg">
 								<div class="large-photo">
-									<img src="./images/内容/content1/photo_ul_li3_large.png" alt="">
+									<img src="./images/内容/content1/photo_ul_li3_large.png" alt="" class="bigImg">
 								</div>
 							</li>
 							<li>
-								<img src="./images/内容/content1/photo_ul_li4_small.jpg" alt="">
+								<img src="./images/内容/content1/photo_ul_li4_small.jpg" alt="" class="smallImg">
 								<div class="large-photo">
-									<img src="./images/内容/content1/photo_ul_li4_large.png" alt="">
+									<img src="./images/内容/content1/photo_ul_li4_large.png" alt="" class="bigImg">
 								</div>
 							</li>
 							<li>
-								<img src="./images/内容/content1/photo_ul_li5_small.jpg" alt="">
+								<img src="./images/内容/content1/photo_ul_li5_small.jpg" alt="" class="smallImg">
 								<div class="large-photo">
-									<img src="./images/内容/content1/photo_ul_li5_large.png" alt="">
+									<img src="./images/内容/content1/photo_ul_li5_large.png" alt="" class="bigImg">
 								</div>
 							</li>
 						</ul>

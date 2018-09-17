@@ -4,7 +4,7 @@
 	height: 420px;
 	margin: 0 auto;
 	position: relative;
-	overflow-x:hidden;
+	overflow:hidden;
 	min-width: 1090px;
 }
 .content1::after{
@@ -14,8 +14,10 @@
 }
 .content1 .img>ul{
 	width: 100%;
+	height: 3360px;
 	overflow: hidden;
-	animation:dingbu 20s both linear infinite;
+	/*animation:dingbu 20s both linear infinite;*/
+	position: absolute;
 }
 .content1 .img>ul>li{
 	width: 1920px;
@@ -24,30 +26,7 @@
 	margin-left: 50%;
 	left: -960px;
 }
-/*.content1 .img>ul>li:nth-child(1){
-	top: -420px;
-}
-.content1 .img>ul>li:nth-child(2){
-	top: -840px;
-}
-.content1 .img>ul>li:nth-child(3){
-	top: -1260px;
-}
-.content1 .img>ul>li:nth-child(4){
-	top: -1480px;
-}
-.content1 .img>ul>li:nth-child(5){
-	top: -2100px;
-}
-.content1 .img>ul>li:nth-child(6){
-	top: -2520px;
-}
-.content1 .img>ul>li:nth-child(7){
-	top: -2940px;
-}
-.content1 .img>ul>li:nth-child(8){
-	top: -3360px;
-}*/
+
 @keyframes dingbu{
 	0%{
 		transform: translateY(0)
